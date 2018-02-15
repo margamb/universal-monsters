@@ -1,0 +1,146 @@
+.grid {
+      display: grid;
+      background: none;
+      width: 900px;
+      margin: 0 auto;
+      height: 800px;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+
+    }
+}
+.vampiraLogo {
+   grid-area: 1 / 1 / 2 / 1;
+   grid-gap: 20px;
+}
+
+.vampiraPresents {
+  grid-area: 1 / 2 / 1 / 5;
+  font-family: Nobel;
+  font-weight: bold;
+  font-size: 50px;
+  color: #DA7E31;
+  align-items: top;
+
+}
+.header {
+  grid-area: 1/ 2 / 2 / 5;
+}
+.exposition {
+  align-items: end;
+
+  font-family: Nobel;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dracula  {
+  grid-area: 2 / 1 / 4 / 1;
+  z-index:1;
+}
+
+.monster:hover {
+  opacity: 0;
+
+}
+
+.draculaTy  {
+  grid-area: 2 / 1 / 4 / 1;
+}
+
+.frankenstein {
+  grid-area: 2 / 2 / 4 / 3;
+  z-index:1;
+}
+.frankensteinTy {
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.wolfman {
+  grid-area: 2 / 3 / 5 / 4;
+  z-index: 1;
+}
+.wolfmanTy {
+  grid-area: 2 / 3 / 5 / 4;
+}
+
+.mummy {
+  grid-area: 2 / 4/ 5 / 5;
+  z-index:1;
+}
+.mummyTy{
+  grid-area: 2 / 4/ 5 / 5;
+}
+.creature  {
+  grid-area: 5 / 1 /7/ 1;
+  z-index:1;
+}
+.creatureTy  {
+  grid-area: 5 / 1 /7/ 1;
+}
+.bride {
+  grid-area: 5 / 2 / 7 / 3;
+  z-index:1;
+}
+.brideTy {
+  grid-area: 5 / 2 / 7 / 3;
+}
+.opera {
+  grid-area: 5 / 3 / 7 / 4;
+    z-index:1;
+}
+.operaTy {
+  grid-area: 5 / 3 / 7 / 4;
+}
+.invisible {
+  grid-area: 5 / 4/ 7 / 5;
+    z-index:1;
+}
+.invisibleTy {
+  grid-area: 5 / 4/ 7 / 5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    width: 600px;
+    height:650px;
+    margin: 0 auto;
+  }
+  .vampiraPresents {
+
+    font-size: 40px ;
+    height: 50%;
+  }
+  .exposition {
+    font-size: 30px ;
+  }
+  .vampiraLogo {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid {
+    width:400px;
+    height:370px;
+    margin: 0 auto;
+  }
+  .vampiraPresents {
+    width: 65%;
+    font-size: 20px ;
+    height: 50%;
+  }
+  .exposition {
+    font-size: 15px ;
+  }
+  .vampiraLogo {
+    align-self: center;
+  }
+}
